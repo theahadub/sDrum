@@ -31,3 +31,9 @@ Adobe SAP Code list: https://helpx.adobe.com/enterprise/package/help/apps-deploy
 
 Adobe Uninstaller: https://helpx.adobe.com/enterprise/using/uninstall-creative-cloud-products.html
 
+==
+REQUIREMENTS
+==
+Needs https://github.com/jqlang  installed before running.  Script based installer coming soon.
+
+Swift Dialog created by @bartreardon https://github.com/swiftDialog/swiftDialog - script based installer included.

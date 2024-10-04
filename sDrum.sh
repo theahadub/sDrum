@@ -51,6 +51,7 @@
 # Assumptions
 #########################################################################################
 # You already have Dialog and JQ installed - installers to be added later
+# UPDATE: jq now part of macOS 15.  We check for it in /usr/bin/jq to make sure.
 # You have icons in the /Library/Management/sdrum/Branding/Icons folder that match the
 #     SAP code for the product. Example: PPRO.png for Premier Pro
 #

@@ -34,6 +34,6 @@ Adobe Uninstaller: https://helpx.adobe.com/enterprise/using/uninstall-creative-c
 ==
 REQUIREMENTS
 ==
-Needs https://github.com/jqlang  installed before running.  Script based installer coming soon.
+Needs https://github.com/jqlang  installed before running.  Script based installer coming soon.  (Update: /usr/bin/jq is now part of macOS 15+.  The script already checks for the so it should just work with out propting for jq to be installed)
 
 Swift Dialog created by @bartreardon https://github.com/swiftDialog/swiftDialog - script based installer included.

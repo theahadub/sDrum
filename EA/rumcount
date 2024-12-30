@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# read the file that the policy makes
+
+if [ -f "/var/log/rumcount.txt" ]; then
+	crum=$(cat /var/log/rumcount.txt)
+    echo "<result>$crum</result>"
+else
+    echo "<result>0</result>"
+fi

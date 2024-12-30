@@ -1,0 +1,15 @@
+Running Adobe Remote Update Manager can take a few minutes and is not good to run in an Extension Attribute.  Instead, make a policy to figure out the count.
+
+Create a new policy.
+
+Set your trigger and frequency.  Also set your scope (no need to run on devices that do not have Adobe products)
+
+In Files and Processes, go to the bottom and put in Execute Command
+
+  sudo /usr/local/bin/RemoteUpdateManager --action=list | grep "(" | wc -l  | awk '{$1=$1};1' > /var/log/rumcount.txt
+
+Save your policy.
+
+A bug in this is sometimes it will report back 2 when there really is 0.  
+
+Now make a smart group that reads the value of the EA and then you can run sdrum when there are updates available.
